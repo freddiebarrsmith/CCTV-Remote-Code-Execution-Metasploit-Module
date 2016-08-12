@@ -23,7 +23,7 @@ cd /usr/share/metasploit-framework/modules/exploits/linux/http
 ```
 **Step 2:**
 ```
-git clone https://github.com/freddiebarrsmith/CCTV-Remote-Code-Execution-Metasploit-Module.git
+ wget https://github.com/freddiebarrsmith/CCTV-Remote-Code-Execution-Metasploit-Module/archive/master.zip && unzip -j master.zip 
 ```
 **Step 3:**
 
