@@ -64,7 +64,7 @@ whoami
 ```
 
 to get the answer
-
+```
 root
-
+```
 if the exploit executed succesfully
