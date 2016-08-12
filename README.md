@@ -1,7 +1,7 @@
 # CCTV-Remote-Code-Execution-Metasploit-Module
 
 
-This code is adapted from the genius Rotem Kerner's python exploit into 2 metasploit modules to allow for easy pen testing of systems that utilise CCTV DVR's. If you go onto shodan.io and type in Cross Web Server, there are thousands of vulnerable web hosts, many of them presumably already exploited. This exploit should only be used for ethical, legal and authorised penetration tests.
+This code is adapted from the genius Rotem Kerner's python exploit into 2 metasploit modules to allow for easy pen testing of systems that utilise CCTV DVR's. If you go onto shodan.io and type in Cross Web Server, there are thousands of vulnerable CCTV DVR web hosts, many of them presumably already exploited. This exploit should only be used for ethical, legal and authorised penetration tests.
 
 http://www.kerneronsec.com/2016/02/remote-code-execution-in-cctv-dvrs-of.html
 
